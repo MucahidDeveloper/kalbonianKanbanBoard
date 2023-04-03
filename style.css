@@ -71,6 +71,7 @@ body {
   flex-direction: column;
   gap: 1.2rem;
   margin-bottom: 1.2rem;
+  padding: 0.6rem;
 }
 .task {
   display: flex;
@@ -78,6 +79,8 @@ body {
   box-shadow: 0 0 1.2rem #1e4b3a;
   border-radius: 0.5rem;
   padding: 0.8rem;
+  transition: all 0.3s;
+  cursor: grab;
 }
 .li-on {
   border-radius: 0.5rem;
@@ -90,7 +93,9 @@ body {
   border: none;
   flex: 1 0 auto;
   border: none;
-  cursor: grab;
+
+  display: flex;
+  align-self: center;
 }
 .task:hover {
   transform: translateY(0.4rem);
@@ -104,17 +109,18 @@ body {
   margin: 0.2rem;
 }
 .trashicon {
-  stroke: red;
+  stroke: rgb(204, 6, 6);
   /* position: absolute; */
 }
 .editicon {
   /* position: absolute; */
-  stroke: blue;
+  stroke: rgb(11, 11, 190);
 }
 .icon:hover {
   background-color: rgba(98, 171, 143, 0.308);
+  border-radius: 0.5rem;
 }
-.adding-button {
+.adding {
   background-color: rgba(30, 75, 58, 0.4);
   border-radius: 0.5rem;
   color: #d8eae3;
@@ -124,7 +130,7 @@ body {
   border: 0.1rem solid #1e4b3a;
   transition: all 0.3s;
 }
-.adding-button:hover {
+.adding:hover {
   background-color: rgba(30, 75, 58, 0.9);
   border: 0.1rem solid #1e4b3a;
   transform: scale(1.2rem, 1.2rem);
