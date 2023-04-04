@@ -168,13 +168,16 @@ function deleting() {
   });
 }
 
-// function editing() {
-//   let editicon = document.querySelectorAll(".editicon");
-//   editicon.forEach((edit) => {
-//     edit.addEventListener("click", function () {
-//       this.parentElement.document.createTextNode("");
-//       console.log("s");
-//     });
-//   });
-// }
-// .parentElement.
+function editing() {
+  let editicon = document.querySelectorAll(".editicon");
+  editicon.forEach((edit) => {
+    edit.addEventListener("click", function () {
+      this.parentElement.setAttribute("contenteditable", "true");
+      this.parentElement.focus();
+    });
+  });
+}
+
+// local storage
+// localStorage.setItem("tasks", "task");
+// localStorage.getItem("tasks");
