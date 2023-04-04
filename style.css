@@ -1,0 +1,145 @@
+/* 
+Colors:
+Main ground:  #3b9673
+Lite ground:  #62ab8f
+headlines: #060f0b , #0c1e17
+tasks: #d8eae3
+buttons: #1e4b3a
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Alkatra", sans-serif;
+  background-color: #3b9673;
+  color: #0c1e17;
+  line-height: 1;
+}
+
+.container {
+  padding: 0 3.8rem;
+  margin: 3.2rem auto;
+  background-color: #62ab8f;
+  /* height: 50vh; */
+  max-width: 80vw;
+  text-align: center;
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 5.4rem;
+  padding: 5.2rem 0;
+  color: #060f0b;
+  text-shadow: 0 0 5.4rem rgba(6, 15, 11, 0.615);
+}
+.list-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22.8rem, 1fr));
+  grid-template-rows: auto; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 1.2rem;
+}
+.list-line {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.8rem 1.8rem 2.4rem 1.8rem;
+  border: 0.4rem dashed rgba(6, 15, 11, 0.35);
+  margin-bottom: 1.8rem;
+  border-radius: 0.5rem;
+}
+.secondary-headline {
+  font-weight: 600;
+  font-size: 3.2rem;
+  padding: 2.4rem 1.2rem;
+  color: #0c1e17;
+}
+.doing-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  /* margin-bottom: 1.2rem; */
+  padding: 1rem;
+}
+.task {
+  display: flex;
+  background-color: #d8eae3;
+  box-shadow: 0 0 1.2rem #1e4b3a;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  transition: all 0.3s;
+  cursor: grab;
+}
+.li-on {
+  border-radius: 0.5rem;
+  background-color: #d8eae3;
+  text-align: left;
+  padding-left: 1.8rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Alkatra", sans-serif;
+  border: none;
+  flex: 1 0 auto;
+  border: none;
+  display: flex;
+  align-self: center;
+}
+.task:hover {
+  transform: translateY(0.4rem);
+}
+
+.icon {
+  width: 2.8rem;
+  cursor: pointer;
+  padding: 0.4rem;
+  transition: all 0.3s;
+  margin: 0.2rem;
+}
+.trashicon {
+  stroke: rgb(204, 6, 6);
+  /* position: absolute; */
+}
+.editicon {
+  /* position: absolute; */
+  stroke: rgb(11, 11, 190);
+}
+.icon:hover {
+  background-color: rgba(98, 171, 143, 0.308);
+  border-radius: 0.5rem;
+}
+.adding {
+  background-color: rgba(30, 75, 58, 0.4);
+  border-radius: 0.5rem;
+  color: #d8eae3;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: 0.1rem solid #1e4b3a;
+  transition: all 0.3s;
+}
+.adding:hover {
+  background-color: rgba(30, 75, 58, 0.9);
+  border: 0.1rem solid #1e4b3a;
+  transform: scale(1.2rem, 1.2rem);
+}
+
+.footer {
+  padding: 2.4rem;
+  font-size: 1.8rem;
+}
+.myName {
+  font-weight: 700;
+  color: #060f0b;
+}
